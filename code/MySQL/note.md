@@ -264,3 +264,39 @@ alter table name drop primary key;
 > ```sql
 > alter table user3 change id new_id int;
 > ```
+
+## 更新数据
+
+### 更新特定数据
+
+> ```sql
+> update table_name set field1=value1, field2=value2 where condition;
+> ```
+
+> ```sql
+> update user set name="sunny" where id=3;
+> ```
+
+### 跟新所有数据
+
+> ```sql
+> update user set name="sunny_all";
+> ```
+
+## 删除记录
+
+### 删除指定数据
+
+> ```sql
+> delete from table_name where condition
+> ```
+
+> ```sql
+> delete from user where id=2
+> ```
+
+### 删除所有数据
+
+> ```sql
+> delete from user;
+> ```
